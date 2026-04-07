@@ -1,20 +1,13 @@
 {
-  "name": "p10",
+  "name": "miproyecto",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Un proyecto super sencillo",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "build": "mkdir -p build && cp index.html styles.css build/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/internetgdl/p10.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/internetgdl/p10/issues"
-  },
-  "homepage": "https://github.com/internetgdl/p10#readme"
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
