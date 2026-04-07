@@ -20,12 +20,12 @@ resource "cloudflare_pages_project" "mi_pagina" {
     }
   }
 
-  # Opcional: Configuraciones de construcción si usas un framework (React, Vue, Hugo, etc.)
-  # build_config {
-  #   build_command   = "npm run build"
-  #   destination_dir = "build" # Cambiar según el framework (ej. "dist", "public")
-  #   root_dir        = "/"
-  # }
+  # Configuraciones de construcción para NodeJS (Vite)
+  build_config {
+    build_command   = "npm run build"
+    destination_dir = "build"
+    root_dir        = "/"
+  }
 }
 
 # (Opcional) Si quieres asociar un dominio personalizado que ya controlas en Cloudflare
