@@ -1,0 +1,13 @@
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+*.tfvars.json
+
+# Ocultar credenciales de ejemplo o reales
+terraform.tfvars
+
+# Otras carpetas que no van en Git
+node_modules/
+.DS_Store

@@ -5,20 +5,20 @@ resource "cloudflare_pages_project" "mi_pagina" {
   production_branch = "main"
 
   # Opcional: Configuración para conectar directamente con un repositorio de GitHub
-  # source {
-  #   type = "github"
-  #   config {
-  #     owner                         = "mi-usuario-github"
-  #     repo_name                     = "mi-repo-pagina"
-  #     production_branch             = "main"
-  #     pr_comments_enabled           = true
-  #     deployments_enabled           = true
-  #     production_deployment_enabled = true
-  #     preview_deployment_setting    = "all"
-  #     preview_branch_includes       = ["*"]
-  #     preview_branch_excludes       = []
-  #   }
-  # }
+  source {
+    type = "github"
+    config {
+      owner                         = "internetgdl"
+      repo_name                     = "p10"
+      production_branch             = "main"
+      pr_comments_enabled           = true
+      deployments_enabled           = true
+      production_deployment_enabled = true
+      preview_deployment_setting    = "all"
+      preview_branch_includes       = ["*"]
+      preview_branch_excludes       = []
+    }
+  }
 
   # Opcional: Configuraciones de construcción si usas un framework (React, Vue, Hugo, etc.)
   # build_config {
