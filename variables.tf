@@ -14,3 +14,21 @@ variable "project_name" {
   type        = string
   default     = "mi-pagina-sencilla"
 }
+
+variable "database_name" {
+  description = "El nombre de la base de datos D1"
+  type        = string
+  default     = "mi-base-de-datos"
+}
+
+variable "github_owner" {
+  description = "El usuario/organización de GitHub"
+  type        = string
+  default     = "internetgdl"
+}
+
+variable "github_repo" {
+  description = "El nombre del repositorio de GitHub"
+  type        = string
+  default     = "p10"
+}
